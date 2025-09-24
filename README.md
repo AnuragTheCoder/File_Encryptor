@@ -36,3 +36,28 @@ This branch demonstrates **parallel processing using threads and shared memory**
 git clone <repo-url>
 cd "cpp file encrypter"
 git checkout <branch>
+```
+### Setup And Run
+```bash
+# Optional: create a Python virtual environment for helper scripts
+python -m venv myvenv
+source myvenv/bin/activate   # Windows: myvenv\Scripts\activate
+
+# Prepare directories
+python makeDirs.py
+
+# Build and run
+make
+./encrypty
+
+# Follow prompts:
+# 1. Enter the directory name created from makeDirs.py
+# 2. Type ENCRYPT or DECRYPT
+```
+### Usage example
+```bash
+Enter directory name: test
+Action (ENCRYPT/DECRYPT): ENCRYPT
+Encryption completed successfully!
+```
+
